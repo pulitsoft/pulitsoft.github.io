@@ -42,7 +42,7 @@ animation: AnimationName 49s ease infinite;
 .font-eng{font-family: 'Muli', sans-serif;}
 .font-kor{font-family: 'Nanum Gothic', sans-serif; letter-spacing: 0.01rem;}
 
-mark {background-color:#fff;}
+mark {background-color:rgba(0,0,0,0);}
 
 a:link {text-decoration: none;}
 a:hover {text-decoration: none;}
@@ -88,14 +88,14 @@ overflow-wrap: keep-all!important;
 }
 .main img{width:100%;}
 
-
-
 footer {display:block;padding-top:20px;padding-bottom:20px;position:fixed;bottom:0;}
-footer p{float:left; font-size:12.5px; color:#ffffff;line-height:20px;}
+footer p{font-size:12.5px; color:#ffffff;line-height:15px;}
 footer a{color:#626e73;}
 footer a:hover, footer a:visited{color:#626e73;}
 
-@media screen and (min-width: 601px) {
+
+
+@media screen and (min-width: 700px) {
 h1 {font-size:80px; font-weight:bold; color:#353b3e;}
 h2 {font-size:40px; font-weight:bold; color:#353b3e;}
 h3 {font-size:40px; font-weight:700; color:#ffffff; line-height:40px;}
@@ -111,7 +111,7 @@ li a {font-size:20px;}
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 .bg{
 background: linear-gradient(127deg, #111314, #01082a, #020f50, #020f50, #041a8a);
 background-size: 1000% 1000%;
@@ -121,7 +121,6 @@ background-size: 1000% 1000%;
 -o-animation: AnimationName 49s ease infinite;
 animation: AnimationName 49s ease infinite;
 }
-
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 15%}
     50%{background-position:100% 86%}
@@ -142,6 +141,9 @@ animation: AnimationName 49s ease infinite;
     50%{background-position:100% 86%}
     100%{background-position:0% 15%}
 }
+
+
+
 br {display:none;}
 mark{background-color:rgba(0,0,0,0);}
 h1 {font-size:35px; font-weight:bold; color:#353b3e;}
@@ -155,6 +157,88 @@ li a {font-size:18px;}
 .big-title{margin-bottom:10px;}
 .sub-title{margin-bottom:80px;}
 .button-margin-top{margin-top:40px;}
-.text-button{padding:20px 30px;background:rgba(0,0,0,0);color:#fff;border:2px solid white;border-radius:8px;font-size:12.5px;font-weight:600;}
+.text-button{padding:20px 30px;background:rgba(0,0,0,0);color:#fff;border:2px solid white;border-radius:8px;font-size:12.5px;font-weight:600;text-decoration: none;outline: none; }
 .text-button:hover, .text-button:visited{color:#fff;}
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.3); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  bottom: 0;
+  background-color: #fefefe;
+  width: 100%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s
+}
+/* The Close Button */
+.close {
+  color: #111314;
+  float: right;
+  right:5%;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #111314;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #fefefe;
+  color: white;
+}
+.modal-header h3{color:#111314;}
+
+.modal-body {padding: 8px 16px;}
+.modal-body p{color:#111314;word-break: keep-all!important;}
+
+.modal-footer {
+  display:none;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
 }
