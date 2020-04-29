@@ -108,24 +108,51 @@ li a {font-size:20px;}
 .text-button:hover, .text-button:visited{color:#fff;}
 }
 
+
+
 @media screen and (max-width: 600px) {
 .bg{
-background: url('../cont/woodendummysm.png');
-background-size: auto 88%;
-background-repeat: no-repeat;
-background-position: center bottom;
+background: linear-gradient(127deg, #111314, #01082a, #020f50, #020f50, #041a8a);
+background-size: 1000% 1000%;
+
+-webkit-animation: AnimationName 49s ease infinite;
+-moz-animation: AnimationName 49s ease infinite;
+-o-animation: AnimationName 49s ease infinite;
+animation: AnimationName 49s ease infinite;
 }
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 15%}
+    50%{background-position:100% 86%}
+    100%{background-position:0% 15%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 15%}
+    50%{background-position:100% 86%}
+    100%{background-position:0% 15%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 15%}
+    50%{background-position:100% 86%}
+    100%{background-position:0% 15%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 15%}
+    50%{background-position:100% 86%}
+    100%{background-position:0% 15%}
+}
+
 mark{background-color:rgba(0,0,0,0);}
 h1 {font-size:35px; font-weight:bold; color:#353b3e;}
 h2 {font-size:25px; font-weight:bold; color:#353b3e;}
 h3 {font-size:25px; font-weight:700; color:#ffffff; line-height:35px;}
-p {font-size: 12.5px; font-weight:600; color:#ffffff; line-height:30px;} 
+p {font-size: 12.5px; font-weight:400; color:#ffffff; line-height:30px;} 
 li a {font-size:18px;}
 .headerspan-weak{color:#353b3e;}
-.nav-li-a-logo img{height:25px;}
+.nav-li-a-logo img{height:55px;}
 .main{width:100%;}
 .big-title{margin-bottom:10px;}
 .sub-title{margin-bottom:80px;}
-.text-button{padding:20px 25px;background:#6a82fb;color:#fff;border-radius:8px;font-size:12.5px;font-weight:600;}
+.text-button{padding:20px 30px;background:rgba(0,0,0,0);color:#fff;border:2px solid white;border-radius:8px;font-size:12.5px;font-weight:600;}
 .text-button:hover, .text-button:visited{color:#fff;}
 }
